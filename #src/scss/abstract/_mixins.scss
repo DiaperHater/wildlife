@@ -11,6 +11,12 @@
 	font-style: $style;
 }
 
+@mixin icon($width, $height, $url){
+	width: $width;
+	height: $height;
+	background-image: $url;
+}
+
 @mixin columns($width) {
 	display: flex;
 	flex-wrap: wrap;

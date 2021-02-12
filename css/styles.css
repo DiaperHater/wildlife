@@ -202,3 +202,72 @@ h3 {
   font-weight: normal;
   font-style: normal;
 }
+
+.logo-img {
+  display: inline-block;
+  width: 70px;
+  height: 60px;
+  background-image: url("../img/logo.svg");
+}
+
+.icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon-search {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icons/search.svg");
+}
+
+.icon-prev {
+  width: 26px;
+  height: 39px;
+  background-image: url("../img/icons/arrow-left.svg");
+}
+
+.icon-next {
+  width: 30px;
+  height: 39px;
+  background-image: url("../img/icons/arrow-right.svg");
+}
+
+.icon-facebook {
+  width: 16px;
+  height: 28px;
+  background-image: url("../img/icons/facebook.svg");
+}
+
+.icon-instagram {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/icons/instagram.svg");
+}
+
+.icon-pinterest {
+  width: 21px;
+  height: 27px;
+  background-image: url("../img/icons/pinterest.svg");
+}
+
+.icon-telegram {
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/icons/telegram.svg");
+}
+
+.header {
+  background: #333333;
+}
+
+.survival__wrapper {
+  background: url("../img/survival/fox.png") no-repeat center center;
+}

@@ -1,0 +1,30 @@
+.icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-search {
+	@include icon(32px, 32px, url('../img/icons/search.svg'));
+}
+
+.icon-prev {
+	@include icon(26px, 39px, url('../img/icons/arrow-left.svg'));
+}
+
+.icon-next {
+	@include icon(30px, 39px, url('../img/icons/arrow-right.svg'));
+}
+
+.icon-facebook {
+	@include icon(16px, 28px, url('../img/icons/facebook.svg'));
+}
+.icon-instagram {
+	@include icon(30px, 30px, url('../img/icons/instagram.svg'));
+}
+.icon-pinterest {
+	@include icon(21px, 27px, url('../img/icons/pinterest.svg'));
+}
+.icon-telegram {
+	@include icon(26px, 23px, url('../img/icons/telegram.svg'));
+}
