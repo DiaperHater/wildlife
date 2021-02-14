@@ -1,7 +1,11 @@
 .survival {
-
+	background-color: $color-background-1;
 }
 
 .survival__wrapper {
 	background: url('../img/survival/fox.png') no-repeat center center;
+}
+
+.survival__title {
+	color: $color-main;
 }

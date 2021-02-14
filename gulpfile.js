@@ -75,6 +75,7 @@ function html() {
 function css() {
 	return src(path.src.css)
 		.pipe(gulpFileInclude())
+		.pipe(dest(path.dist.css))
 		.pipe(gulpSass({otputStyle: "expanded"}))
 		.pipe(gulpGroupCSSMediaQueries())
 		.pipe(

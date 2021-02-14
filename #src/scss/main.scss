@@ -8,10 +8,15 @@
 @@include('base/_base.scss')
 @@include('base/_logo.scss')
 @@include('base/_icons.scss')
+@@include('base/_links.scss')
+@@include('base/_buttons.scss')
 
 @@include('pages/_index.scss')
 @@include('layout/_header.scss')
+@@include('layout/_footer.scss')
 
 @@include('components/_survival.scss')
+@@include('components/_articles.scss')
+@@include('components/_get-notified.scss')
 
 

@@ -5,6 +5,7 @@ html {
 body {
 	font-size: 1.6rem;
 	@extend %font-prime;
+	color: $color-font-light;
 }
 
 h1 {

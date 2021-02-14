@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none; } }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+$color-main: #cd6326;
+$color-main-dark: #8F5613;
+$color-main-light: #E39128;
+
+$color-background-1: #02160b;
+$color-background-2: #cccccc;
+$color-background-3: #181617;
+
+$color-font-dark:  #333333;
+$color-font-gray:  #666666;
+$color-font-light:  #f7f7f7;
+
+$content-width: 1200px;
+
+%font-prime {
+	font-family: 'Open Sans', Verdana, sans-serif;
+}
+
+%font-add {
+	font-family: Roboto, Verdana, sans-serif;
+}
+
+%transition {
+	transition: all .3s ease-out;
+}
+
+@mixin font(
+	$size: 16px, 
+	$line-height: 1.3em, 
+	$weight: normal,
+	$style: normal
+) {
+
+	font-size: $size;
+	line-height: $line-height;
+	font-weight: $weight;
+	font-style: $style;
+}
+
+@mixin icon($width, $height, $url){
+	width: $width;
+	height: $height;
+	background-image: $url;
+}
+
+@mixin columns($width) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	> * {
+		flex-basis: $width;
+	}
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/roboto/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/roboto/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/roboto/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/open-sans/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/open-sans/open-sans-v18-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/open-sans/open-sans-v18-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/open-sans/open-sans-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/open-sans/open-sans-v18-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	@extend %font-prime;
+	color: $color-font-light;
+}
+
+h1 {
+	@include font(4.8rem, 7.2rem);
+}
+
+h2 {
+	@include font(4.8rem, 7.2rem);
+}
+
+h3 {
+	@include font(2.7rem, 4.05rem);
+}
+.logo-img {
+	display: inline-block;
+	width: 70px;
+	height: 60px;
+	background-image: url('../img/logo.svg');
+}
+
+.logo-text {
+	color: $color-font-light;
+}
+.icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-search {
+	@include icon(32px, 32px, url('../img/icons/search.svg'));
+}
+
+.icon-prev {
+	@include icon(26px, 39px, url('../img/icons/arrow-left.svg'));
+}
+
+.icon-next {
+	@include icon(30px, 39px, url('../img/icons/arrow-right.svg'));
+}
+
+.icon-facebook {
+	@include icon(16px, 28px, url('../img/icons/facebook.svg'));
+}
+.icon-instagram {
+	@include icon(30px, 30px, url('../img/icons/instagram.svg'));
+}
+.icon-pinterest {
+	@include icon(21px, 27px, url('../img/icons/pinterest.svg'));
+}
+.icon-telegram {
+	@include icon(26px, 23px, url('../img/icons/telegram.svg'));
+}
+
+.link {
+	color: $color-font-light;
+}
+.button {
+	color: $color-font-light;
+}
+
+
+.header {
+	background: $color-background-1;
+}
+
+.footer {
+	background-color: $color-background-3;
+}
+
+.survival {
+	background-color: $color-background-1;
+}
+
+.survival__wrapper {
+	background: url('../img/survival/fox.png') no-repeat center center;
+}
+
+.survival__title {
+	color: $color-main;
+}
+
+.articles {
+	background-color: $color-background-2;
+}
+
+.articles__title {
+	color: $color-font-dark;
+}
+
+.articles__text {
+	color: $color-font-gray;
+}
+.get-notified {
+	background-color: $color-background-2;
+}
+
+.get-notified__title {
+	$color-font-dark:  #333333;
+}
+
+

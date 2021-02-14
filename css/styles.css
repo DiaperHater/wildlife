@@ -180,6 +180,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  color: #f7f7f7;
 }
 
 h1 {
@@ -208,6 +209,10 @@ h3 {
   width: 70px;
   height: 60px;
   background-image: url("../img/logo.svg");
+}
+
+.logo-text {
+  color: #f7f7f7;
 }
 
 .icon {
@@ -264,10 +269,46 @@ h3 {
   background-image: url("../img/icons/telegram.svg");
 }
 
+.link {
+  color: #f7f7f7;
+}
+
+.button {
+  color: #f7f7f7;
+}
+
 .header {
-  background: #333333;
+  background: #02160b;
+}
+
+.footer {
+  background-color: #181617;
+}
+
+.survival {
+  background-color: #02160b;
 }
 
 .survival__wrapper {
   background: url("../img/survival/fox.png") no-repeat center center;
+}
+
+.survival__title {
+  color: #cd6326;
+}
+
+.articles {
+  background-color: #cccccc;
+}
+
+.articles__title {
+  color: #333333;
+}
+
+.articles__text {
+  color: #666666;
+}
+
+.get-notified {
+  background-color: #cccccc;
 }
