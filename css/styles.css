@@ -150,6 +150,7 @@ body {
   font-family: 'Open Sans', Verdana, sans-serif;
 }
 
+.logo-text,
 .button {
   font-family: Roboto, Verdana, sans-serif;
 }
@@ -208,6 +209,10 @@ h3 {
   font-style: normal;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .logo-img {
   display: inline-block;
   width: 70px;
@@ -216,7 +221,13 @@ h3 {
 }
 
 .logo-text {
+  font-size: 3.2rem;
+  line-height: 6rem;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
   color: #f7f7f7;
+  margin-left: 15px;
 }
 
 .icon {

@@ -146,6 +146,10 @@ h2 {
 h3 {
 	@include font(2.7rem, 4.05rem);
 }
+.logo {
+	text-decoration: none;
+}
+
 .logo-img {
 	display: inline-block;
 	width: 70px;
@@ -154,7 +158,11 @@ h3 {
 }
 
 .logo-text {
+	@extend %font-add;
+	@include font(3.2rem, 6rem);
+	text-transform: uppercase;
 	color: $color-font-light;
+	margin-left: 15px;
 }
 .icon {
 	display: inline-flex;
