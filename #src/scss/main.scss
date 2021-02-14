@@ -11,13 +11,14 @@
 @@include('base/_links.scss')
 @@include('base/_buttons.scss')
 
-@@include('pages/_index.scss')
 @@include('layout/_wrapper.scss')
 @@include('layout/_header.scss')
 @@include('layout/_footer.scss')
+@@include('layout/_columns.scss')
 
 @@include('components/_survival.scss')
 @@include('components/_articles.scss')
 @@include('components/_get-notified.scss')
 
+@@include('pages/_index.scss')
 

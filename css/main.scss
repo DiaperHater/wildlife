@@ -194,7 +194,6 @@ h3 {
 	color: $color-font-light;
 }
 
-
 .wrapper {
 	max-width: $content-width;
 	margin: 0 auto;
@@ -203,8 +202,25 @@ h3 {
 	background: $color-background-1;
 }
 
+.header__menu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .footer {
 	background-color: $color-background-3;
+}
+
+.footer__menu {
+	display: flex;
+	flex-wrap: wrap;
+}
+.layout-2-columns, 
+.layout-3-columns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .survival {
@@ -237,5 +253,6 @@ h3 {
 .get-notified__title {
 	$color-font-dark:  #333333;
 }
+
 
 
