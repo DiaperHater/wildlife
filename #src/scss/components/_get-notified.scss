@@ -1,7 +1,23 @@
 .get-notified {
 	background-color: $color-background-2;
+	padding: 120px 0 239px;
 }
 
 .get-notified__title {
-	$color-font-dark:  #333333;
+	text-align: center;
+	color: $color-font-dark;
+}
+
+.get-notified__form {
+	display: flex;
+	justify-content: center;
+	margin-top: 59px;
+	input {
+		width: 540px;
+		height: 47px;
+		background: $color-background-2;
+		border: 1px solid $color-font-gray;
+		border-right: none;
+		padding: 15px;
+	}
 }

@@ -1,8 +1,25 @@
 .footer {
+	padding: 150px 0;
 	background-color: $color-background-3;
 }
 
 .footer__menu {
 	display: flex;
 	flex-wrap: wrap;
+	&> li {
+		margin-left: 85px;
+	}
+	&> li:first-child {
+		margin-left: 0;
+	}
+}
+
+.footer__social-icons {
+	&> * {
+		margin-left: 27px;
+	}
+
+	&> *:first-child {
+		margin-left: 0;
+	}
 }

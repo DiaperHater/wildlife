@@ -1,11 +1,24 @@
 .survival {
 	background-color: $color-background-1;
+	background: url('../img/survival/fox.png') no-repeat top center;
+	background-size: cover;
+	padding: 79px 0 240px;
 }
 
 .survival__wrapper {
-	background: url('../img/survival/fox.png') no-repeat center center;
 }
 
 .survival__title {
 	color: $color-main;
+	margin-top: 120px;
+}
+
+.survival__text {
+	@include font(1.8rem, 2.7rem);
+	max-width: 274px;
+	margin-top: 51px;
+}
+
+.survival__buttons {
+	margin-top: 29px;
 }

@@ -1,8 +1,25 @@
 .header {
-	background: $color-background-1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 19px 0 0;
 }
 
 .header__menu {
 	display: flex;
 	flex-wrap: wrap;
+	&> li {
+		margin-left: 61px;
+	}
+
+	li:first-child {
+		margin-left: 0;
+	}
+}
+
+.header__buttons {
+	&> *{
+		margin-left: 60px;
+	}
 }
