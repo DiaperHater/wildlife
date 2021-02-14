@@ -277,6 +277,11 @@ h3 {
   color: #f7f7f7;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
   background: #02160b;
 }

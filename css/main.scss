@@ -195,6 +195,10 @@ h3 {
 }
 
 
+.wrapper {
+	max-width: $content-width;
+	margin: 0 auto;
+}
 .header {
 	background: $color-background-1;
 }
