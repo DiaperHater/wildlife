@@ -191,8 +191,29 @@ h3 {
 	color: $color-font-light;
 }
 .button {
+	cursor: pointer;
+	@extend %font-add;
+	@include font(2.3rem, 2.7rem);
+	background: transparent;
 	color: $color-font-light;
+	padding: 10px 23px;
+	border: none;
+	
+	&.button--bordered {
+		border: 2px solid $color-main;
+		border-radius: 5px;
+	}
+
+	&.button--colored {
+		background: $color-main;
+		border-radius: 5px;
+	}
 }
+
+.survival__button {
+	padding: 16px 42px;
+}
+
 
 .wrapper {
 	max-width: $content-width;
