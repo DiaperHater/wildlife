@@ -247,18 +247,30 @@ h3 {
 	padding: 10px 23px;
 	border: none;
 	border-radius: 5px;
+	outline: none;
 	@extend %transition;
 	
 	&.button--bordered {
 		border: 2px solid $color-main;
-		&:hover {
+		&:hover, &:focus {
 			background: $color-main;
 			border: 2px solid $color-main;
 		}
+		&:active {
+			background: $color-main-dark;
+			border: 2px solid $color-main-dark;	
+		}
+
 	}
 
 	&.button--colored {
 		background: $color-main;
+		&:hover, &:focus {
+			background: $color-main-light;
+		}
+		&:active {
+			background: $color-main-dark;
+		}
 	}
 }
 
@@ -272,6 +284,14 @@ h3 {
 
 .slider__button {
 	padding: 0;
+}
+
+.slider__button-prev:hover {
+	transform: translateX(-10px);
+}
+
+.slider__button-next:hover {
+	transform: translateX(10px);
 }
 
 .get-notified__button {

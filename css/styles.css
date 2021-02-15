@@ -346,19 +346,35 @@ h3 {
   padding: 10px 23px;
   border: none;
   border-radius: 5px;
+  outline: none;
 }
 
 .button.button--bordered {
   border: 2px solid #cd6326;
 }
 
-.button.button--bordered:hover {
+.button.button--bordered:hover,
+.button.button--bordered:focus {
   background: #cd6326;
   border: 2px solid #cd6326;
 }
 
+.button.button--bordered:active {
+  background: #8F5613;
+  border: 2px solid #8F5613;
+}
+
 .button.button--colored {
   background: #cd6326;
+}
+
+.button.button--colored:hover,
+.button.button--colored:focus {
+  background: #E39128;
+}
+
+.button.button--colored:active {
+  background: #8F5613;
 }
 
 .button-search {
@@ -371,6 +387,18 @@ h3 {
 
 .slider__button {
   padding: 0;
+}
+
+.slider__button-prev:hover {
+  -webkit-transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.slider__button-next:hover {
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .get-notified__button {
