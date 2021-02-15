@@ -9,6 +9,7 @@
 }
 
 .articles__text {
+	@include font(2.4rem, 3.6rem);
 	text-align: center;
 	color: $color-font-gray;
 	margin-top: 20px;

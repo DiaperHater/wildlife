@@ -13,11 +13,16 @@
 	justify-content: center;
 	margin-top: 59px;
 	input {
+		font-size: 22px;
 		width: 540px;
-		height: 47px;
+		height: 63px;
 		background: $color-background-2;
 		border: 1px solid $color-font-gray;
 		border-right: none;
 		padding: 15px;
 	}
+}
+
+.get-notified__button {
+	padding: 18px 34px;
 }

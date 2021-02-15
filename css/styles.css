@@ -440,6 +440,7 @@ h3 {
 .footer {
   padding: 150px 0;
   background-color: #181617;
+  background: url("../img/footer/footer-bg.png") no-repeat center center;
 }
 
 .footer__menu {
@@ -519,7 +520,7 @@ h3 {
 }
 
 .survival__buttons {
-  margin-top: 29px;
+  margin-top: 49px;
 }
 
 .articles {
@@ -533,6 +534,10 @@ h3 {
 }
 
 .articles__text {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: normal;
+  font-style: normal;
   text-align: center;
   color: #666666;
   margin-top: 20px;
@@ -592,10 +597,15 @@ h3 {
 }
 
 .get-notified__form input {
+  font-size: 22px;
   width: 540px;
-  height: 47px;
+  height: 63px;
   background: #cccccc;
   border: 1px solid #666666;
   border-right: none;
   padding: 15px;
+}
+
+.get-notified__button {
+  padding: 18px 34px;
 }
