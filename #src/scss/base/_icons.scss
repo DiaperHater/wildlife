@@ -4,6 +4,13 @@
 	align-items: center;
 }
 
+.icon-round {
+	width: 40px;
+	height: 40px;
+	background: $color-font-light;
+	border-radius: 100%;
+}
+
 .icon-search {
 	@include icon(32px, 32px, url('../img/icons/search.svg'));
 }
