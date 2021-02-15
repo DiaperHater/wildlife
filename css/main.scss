@@ -252,8 +252,8 @@ h3 {
 	&.button--bordered {
 		border: 2px solid $color-main;
 		&:hover {
-			background: $color-main-light;
-			border: 2px solid $color-main-light;
+			background: $color-main;
+			border: 2px solid $color-main;
 		}
 	}
 
