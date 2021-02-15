@@ -458,6 +458,17 @@ h3 {
   margin-left: 0;
 }
 
+.footer__social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer__social-icons > * {
   margin-left: 27px;
 }

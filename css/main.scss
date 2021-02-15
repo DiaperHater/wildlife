@@ -341,6 +341,9 @@ h3 {
 }
 
 .footer__social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	&> * {
 		margin-left: 27px;
 	}
