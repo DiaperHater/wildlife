@@ -287,6 +287,11 @@ h3 {
 
 .link {
   color: #f7f7f7;
+  font-size: 2.3rem;
+  line-height: 6rem;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .button {

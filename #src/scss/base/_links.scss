@@ -1,3 +1,5 @@
 .link {
 	color: $color-font-light;
+	@include font(2.3rem, 6rem);
+	text-decoration: none;
 }
