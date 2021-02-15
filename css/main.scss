@@ -259,18 +259,13 @@ h3 {
 .header__menu {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	&> li {
 		margin-left: 61px;
 	}
 
 	li:first-child {
 		margin-left: 0;
-	}
-}
-
-.header__buttons {
-	&> *{
-		margin-left: 60px;
 	}
 }
 

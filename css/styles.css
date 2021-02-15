@@ -357,6 +357,9 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__menu > li {
@@ -365,10 +368,6 @@ h3 {
 
 .header__menu li:first-child {
   margin-left: 0;
-}
-
-.header__buttons > * {
-  margin-left: 60px;
 }
 
 .footer {
