@@ -2,4 +2,8 @@
 	color: $color-font-light;
 	@include font(2.3rem, 6rem);
 	text-decoration: none;
+	@extend %transition;
+	&:hover {
+		color: $color-main-light;
+	}
 }

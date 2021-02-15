@@ -7,9 +7,14 @@
 	padding: 10px 23px;
 	border: none;
 	border-radius: 5px;
+	@extend %transition;
 	
 	&.button--bordered {
 		border: 2px solid $color-main;
+		&:hover {
+			background: $color-main-light;
+			border: 2px solid $color-main-light;
+		}
 	}
 
 	&.button--colored {

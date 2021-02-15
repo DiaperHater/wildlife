@@ -151,6 +151,17 @@ h3 {
 	text-decoration: none;
 }
 
+.logo-path {
+	@extend %transition;
+}
+
+.logo-svg:hover {
+	cursor: pointer;
+	.logo-path {
+		fill: $color-main-light;
+	}
+}
+
 .logo-img {
 	display: inline-block;
 	width: 70px;
@@ -164,6 +175,10 @@ h3 {
 	text-transform: uppercase;
 	color: $color-font-light;
 	margin-left: 15px;
+	@extend %transition;
+	&:hover {
+		color: $color-main-light;
+	}
 }
 .icon {
 	display: inline-flex;
@@ -176,6 +191,17 @@ h3 {
 	height: 40px;
 	background: $color-font-light;
 	border-radius: 100%;
+}
+
+.icon-path {
+	@extend %transition;
+}
+
+.icon-svg:hover {
+	cursor: pointer;
+	.icon-path {
+		fill: $color-main-light;
+	}
 }
 
 .icon-search {
@@ -207,6 +233,10 @@ h3 {
 	color: $color-font-light;
 	@include font(2.3rem, 6rem);
 	text-decoration: none;
+	@extend %transition;
+	&:hover {
+		color: $color-main-light;
+	}
 }
 .button {
 	cursor: pointer;
@@ -217,9 +247,14 @@ h3 {
 	padding: 10px 23px;
 	border: none;
 	border-radius: 5px;
+	@extend %transition;
 	
 	&.button--bordered {
 		border: 2px solid $color-main;
+		&:hover {
+			background: $color-main-light;
+			border: 2px solid $color-main-light;
+		}
 	}
 
 	&.button--colored {

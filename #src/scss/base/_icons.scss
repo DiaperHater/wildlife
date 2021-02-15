@@ -11,6 +11,17 @@
 	border-radius: 100%;
 }
 
+.icon-path {
+	@extend %transition;
+}
+
+.icon-svg:hover {
+	cursor: pointer;
+	.icon-path {
+		fill: $color-main-light;
+	}
+}
+
 .icon-search {
 	@include icon(32px, 32px, url('../img/icons/search.svg'));
 }

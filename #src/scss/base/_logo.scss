@@ -2,6 +2,17 @@
 	text-decoration: none;
 }
 
+.logo-path {
+	@extend %transition;
+}
+
+.logo-svg:hover {
+	cursor: pointer;
+	.logo-path {
+		fill: $color-main-light;
+	}
+}
+
 .logo-img {
 	display: inline-block;
 	width: 70px;
@@ -15,4 +26,8 @@
 	text-transform: uppercase;
 	color: $color-font-light;
 	margin-left: 15px;
+	@extend %transition;
+	&:hover {
+		color: $color-main-light;
+	}
 }
