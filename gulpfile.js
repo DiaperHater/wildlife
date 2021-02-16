@@ -1,6 +1,6 @@
 //Paths
 let srcDir = "#src";
-let distDir = ".";
+let distDir = "dist";
 
 let path = {
 	dist:{
@@ -52,7 +52,7 @@ let gulImagemin = require('gulp-imagemin');
 function browserSync(params) {
 	browsersync.init({
 		server: {
-			baseDir: "./"
+			baseDir: "./" + distDir + "/"
 		},
 		port: 3000
 	});
